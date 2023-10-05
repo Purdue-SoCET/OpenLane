@@ -1,0 +1,4 @@
+[ZoneTransfer]
+ZoneId=3
+ReferrerUrl=https://github.com/Precision-Innovations/OpenROAD/releases
+HostUrl=https://objects.githubusercontent.com/github-production-release-asset-2e65be/603108552/03bf4e69-690c-4340-99af-df0a347a3068?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=AKIAIWNJYAX4CSVEH53A%2F20231005%2Fus-east-1%2Fs3%2Faws4_request&X-Amz-Date=20231005T055554Z&X-Amz-Expires=300&X-Amz-Signature=b6154acf764bbf52a23e7b77ad20f96fa88d5c9d27a8ada77a82f71d25bbce81&X-Amz-SignedHeaders=host&actor_id=25201098&key_id=0&repo_id=603108552&response-content-disposition=attachment%3B%20filename%3Dopenroad_2.0_amd64-ubuntu20.04-2023-10-04.deb&response-content-type=application%2Foctet-stream
