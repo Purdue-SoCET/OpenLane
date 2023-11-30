@@ -1,0 +1,1 @@
+netgen -batch source /root/nixopenlane/openlane2/runs/RUN_2023-11-30_18-20-58/50-netgen-lvs/lvs_script.lvs

@@ -1,0 +1,1 @@
+verilator --lint-only --Wall --Wno-DECLFILENAME --Wno-EOFNEWLINE --top-module flex_counter /root/nixopenlane/openlane2/runs/RUN_2023-11-30_18-20-58/01-verilator-lint/bb.v /root/nixopenlane/openlane2/desflow1/flex_counter.sv /root/nixopenlane/openlane2/desflow1/synchronizer.sv /root/nixopenlane/openlane2/desflow1/top_level.sv --Wno-fatal --relative-includes --Werror-LATCH

@@ -1,0 +1,201 @@
+Reading OpenROAD database at '/root/nixopenlane/openlane2/runs/RUN_2023-11-30_18-20-58/26-openroad-resizertimingpostcts/flex_counter.odb'…
+Reading library file at '/root/nixopenlane/openlane2/runs/RUN_2023-11-30_18-20-58/tmp/5c0123153e804a2bbcbe52eecdafca66.lib'…
+Reading design constraints file at '/nix/store/igfw5x4x3msz4v61kass8zijavmf330h-python3-3.10.9-env/lib/python3.10/site-packages/openlane/scripts/base.sdc'…
+[INFO] Using clock clk…
+[INFO] Setting output delay to: 2
+[INFO] Setting input delay to: 2
+[INFO] Setting load to: 0.033442
+[INFO] Setting clock uncertainty to: 0.25
+[INFO] Setting clock transition to: 0.1499999999999999944488848768742172978818416595458984375
+[INFO] Setting timing derate to: 5%
+[WARNING STA-0376] cell 'sky130_fd_sc_hd__a2111oi_0' not found.
+[WARNING STA-0376] cell 'sky130_fd_sc_hd__a21boi_0' not found.
+[WARNING STA-0376] cell 'sky130_fd_sc_hd__and2_0' not found.
+[WARNING STA-0376] cell 'sky130_fd_sc_hd__buf_16' not found.
+[WARNING STA-0376] cell 'sky130_fd_sc_hd__clkdlybuf4s15_1' not found.
+[WARNING STA-0376] cell 'sky130_fd_sc_hd__clkdlybuf4s18_1' not found.
+[WARNING STA-0376] cell 'sky130_fd_sc_hd__fa_4' not found.
+[WARNING STA-0376] cell 'sky130_fd_sc_hd__lpflow_bleeder_1' not found.
+[WARNING STA-0376] cell 'sky130_fd_sc_hd__lpflow_clkbufkapwr_1' not found.
+[WARNING STA-0376] cell 'sky130_fd_sc_hd__lpflow_clkbufkapwr_16' not found.
+[WARNING STA-0376] cell 'sky130_fd_sc_hd__lpflow_clkbufkapwr_2' not found.
+[WARNING STA-0376] cell 'sky130_fd_sc_hd__lpflow_clkbufkapwr_4' not found.
+[WARNING STA-0376] cell 'sky130_fd_sc_hd__lpflow_clkbufkapwr_8' not found.
+[WARNING STA-0376] cell 'sky130_fd_sc_hd__lpflow_clkinvkapwr_1' not found.
+[WARNING STA-0376] cell 'sky130_fd_sc_hd__lpflow_clkinvkapwr_16' not found.
+[WARNING STA-0376] cell 'sky130_fd_sc_hd__lpflow_clkinvkapwr_2' not found.
+[WARNING STA-0376] cell 'sky130_fd_sc_hd__lpflow_clkinvkapwr_4' not found.
+[WARNING STA-0376] cell 'sky130_fd_sc_hd__lpflow_clkinvkapwr_8' not found.
+[WARNING STA-0376] cell 'sky130_fd_sc_hd__lpflow_decapkapwr_12' not found.
+[WARNING STA-0376] cell 'sky130_fd_sc_hd__lpflow_decapkapwr_3' not found.
+[WARNING STA-0376] cell 'sky130_fd_sc_hd__lpflow_decapkapwr_4' not found.
+[WARNING STA-0376] cell 'sky130_fd_sc_hd__lpflow_decapkapwr_6' not found.
+[WARNING STA-0376] cell 'sky130_fd_sc_hd__lpflow_decapkapwr_8' not found.
+[WARNING STA-0376] cell 'sky130_fd_sc_hd__lpflow_inputiso0n_1' not found.
+[WARNING STA-0376] cell 'sky130_fd_sc_hd__lpflow_inputiso0p_1' not found.
+[WARNING STA-0376] cell 'sky130_fd_sc_hd__lpflow_inputiso1n_1' not found.
+[WARNING STA-0376] cell 'sky130_fd_sc_hd__lpflow_inputiso1p_1' not found.
+[WARNING STA-0376] cell 'sky130_fd_sc_hd__lpflow_inputisolatch_1' not found.
+[WARNING STA-0376] cell 'sky130_fd_sc_hd__lpflow_isobufsrc_1' not found.
+[WARNING STA-0376] cell 'sky130_fd_sc_hd__lpflow_isobufsrc_16' not found.
+[WARNING STA-0376] cell 'sky130_fd_sc_hd__lpflow_isobufsrc_2' not found.
+[WARNING STA-0376] cell 'sky130_fd_sc_hd__lpflow_isobufsrc_4' not found.
+[WARNING STA-0376] cell 'sky130_fd_sc_hd__lpflow_isobufsrc_8' not found.
+[WARNING STA-0376] cell 'sky130_fd_sc_hd__lpflow_isobufsrckapwr_16' not found.
+[WARNING STA-0376] cell 'sky130_fd_sc_hd__lpflow_lsbuf_lh_hl_isowell_tap_1' not found.
+[WARNING STA-0376] cell 'sky130_fd_sc_hd__lpflow_lsbuf_lh_hl_isowell_tap_2' not found.
+[WARNING STA-0376] cell 'sky130_fd_sc_hd__lpflow_lsbuf_lh_hl_isowell_tap_4' not found.
+[WARNING STA-0376] cell 'sky130_fd_sc_hd__lpflow_lsbuf_lh_isowell_4' not found.
+[WARNING STA-0376] cell 'sky130_fd_sc_hd__lpflow_lsbuf_lh_isowell_tap_1' not found.
+[WARNING STA-0376] cell 'sky130_fd_sc_hd__lpflow_lsbuf_lh_isowell_tap_2' not found.
+[WARNING STA-0376] cell 'sky130_fd_sc_hd__lpflow_lsbuf_lh_isowell_tap_4' not found.
+[WARNING STA-0376] cell 'sky130_fd_sc_hd__mux4_4' not found.
+[WARNING STA-0376] cell 'sky130_fd_sc_hd__o21ai_0' not found.
+[WARNING STA-0376] cell 'sky130_fd_sc_hd__o311ai_0' not found.
+[WARNING STA-0376] cell 'sky130_fd_sc_hd__or2_0' not found.
+[WARNING STA-0376] cell 'sky130_fd_sc_hd__probe_p_8' not found.
+[WARNING STA-0376] cell 'sky130_fd_sc_hd__probec_p_8' not found.
+[WARNING STA-0376] cell 'sky130_fd_sc_hd__xor3_1' not found.
+[WARNING STA-0376] cell 'sky130_fd_sc_hd__xor3_2' not found.
+[WARNING STA-0376] cell 'sky130_fd_sc_hd__xor3_4' not found.
+[WARNING STA-0376] cell 'sky130_fd_sc_hd__xnor3_1' not found.
+[WARNING STA-0376] cell 'sky130_fd_sc_hd__xnor3_2' not found.
+[WARNING STA-0376] cell 'sky130_fd_sc_hd__xnor3_4' not found.
+[INFO] Setting signal min routing layer to: met1 and clock min routing layer to met1. 
+[INFO] Setting signal max routing layer to: met5 and clock max routing layer to met5. 
+-congestion_iterations 50 -verbose
+[INFO GRT-0020] Min routing layer: met1
+[INFO GRT-0021] Max routing layer: met5
+[INFO GRT-0022] Global adjustment: 30%
+[INFO GRT-0023] Grid origin: (0, 0)
+[INFO GRT-0043] No OR_DEFAULT vias defined.
+[INFO GRT-0088] Layer li1     Track-Pitch = 0.4600  line-2-Via Pitch: 0.3400
+[INFO GRT-0088] Layer met1    Track-Pitch = 0.3400  line-2-Via Pitch: 0.3400
+[INFO GRT-0088] Layer met2    Track-Pitch = 0.4600  line-2-Via Pitch: 0.3500
+[INFO GRT-0088] Layer met3    Track-Pitch = 0.6800  line-2-Via Pitch: 0.6150
+[INFO GRT-0088] Layer met4    Track-Pitch = 0.9200  line-2-Via Pitch: 1.0400
+[INFO GRT-0088] Layer met5    Track-Pitch = 3.4000  line-2-Via Pitch: 3.1100
+[INFO GRT-0019] Found 4 clock nets.
+[INFO GRT-0001] Minimum degree: 2
+[INFO GRT-0002] Maximum degree: 8
+[INFO GRT-0003] Macros: 0
+[INFO GRT-0004] Blockages: 70
+
+[INFO GRT-0053] Routing resources analysis:
+          Routing      Original      Derated      Resource
+Layer     Direction    Resources     Resources    Reduction (%)
+---------------------------------------------------------------
+li1        Vertical            0             0          0.00%
+met1       Horizontal        904           429          52.54%
+met2       Vertical          659           366          44.46%
+met3       Horizontal        452           259          42.70%
+met4       Vertical          272           134          50.74%
+met5       Horizontal         88            35          60.23%
+---------------------------------------------------------------
+
+[INFO GRT-0197] Via related to pin nodes: 217
+[INFO GRT-0198] Via related Steiner nodes: 2
+[INFO GRT-0199] Via filling finished.
+[INFO GRT-0111] Final number of vias: 227
+[INFO GRT-0112] Final usage 3D: 793
+
+[INFO GRT-0096] Final congestion report:
+Layer         Resource        Demand        Usage (%)    Max H / Max V / Total Overflow
+---------------------------------------------------------------------------------------
+li1                  0             0            0.00%             0 /  0 /  0
+met1               429            65           15.15%             0 /  0 /  0
+met2               366            47           12.84%             0 /  0 /  0
+met3               259             0            0.00%             0 /  0 /  0
+met4               134             0            0.00%             0 /  0 /  0
+met5                35             0            0.00%             0 /  0 /  0
+---------------------------------------------------------------------------------------
+Total             1223           112            9.16%             0 /  0 /  0
+
+[INFO GRT-0018] Total wirelength: 1593 um
+[INFO GRT-0014] Routed nets: 71
+%OL_CREATE_REPORT antenna.rpt
+[INFO GRT-0043] No OR_DEFAULT vias defined.
+[INFO ANT-0002] Found 0 net violations.
+[INFO ANT-0001] Found 0 pin violations.
+%OL_END_REPORT
+[INFO GRT-0006] Repairing antennas, iteration 1.
+[INFO GRT-0043] No OR_DEFAULT vias defined.
+[INFO GRT-0012] Found 0 antenna violations.
+Placement Analysis
+---------------------------------
+total displacement          0.0 u
+average displacement        0.0 u
+max displacement            0.0 u
+original HPWL             840.9 u
+legalized HPWL            891.6 u
+delta HPWL                    6 %
+
+[INFO DPL-0020] Mirrored 28 instances
+[INFO DPL-0021] HPWL before             891.6 u
+[INFO DPL-0022] HPWL after              840.9 u
+[INFO DPL-0023] HPWL delta               -5.7 %
+%OL_CREATE_REPORT antenna_after.rpt
+[INFO GRT-0043] No OR_DEFAULT vias defined.
+[INFO ANT-0002] Found 0 net violations.
+[INFO ANT-0001] Found 0 pin violations.
+%OL_END_REPORT
+[INFO] Setting signal min routing layer to: met1 and clock min routing layer to met1. 
+[INFO] Setting signal max routing layer to: met5 and clock max routing layer to met5. 
+-congestion_iterations 50 -verbose
+[INFO GRT-0020] Min routing layer: met1
+[INFO GRT-0021] Max routing layer: met5
+[INFO GRT-0022] Global adjustment: 30%
+[INFO GRT-0023] Grid origin: (0, 0)
+[INFO GRT-0043] No OR_DEFAULT vias defined.
+[INFO GRT-0088] Layer li1     Track-Pitch = 0.4600  line-2-Via Pitch: 0.3400
+[INFO GRT-0088] Layer met1    Track-Pitch = 0.3400  line-2-Via Pitch: 0.3400
+[INFO GRT-0088] Layer met2    Track-Pitch = 0.4600  line-2-Via Pitch: 0.3500
+[INFO GRT-0088] Layer met3    Track-Pitch = 0.6800  line-2-Via Pitch: 0.6150
+[INFO GRT-0088] Layer met4    Track-Pitch = 0.9200  line-2-Via Pitch: 1.0400
+[INFO GRT-0088] Layer met5    Track-Pitch = 3.4000  line-2-Via Pitch: 3.1100
+[INFO GRT-0019] Found 4 clock nets.
+[INFO GRT-0001] Minimum degree: 2
+[INFO GRT-0002] Maximum degree: 8
+[INFO GRT-0003] Macros: 0
+[INFO GRT-0004] Blockages: 70
+
+[INFO GRT-0053] Routing resources analysis:
+          Routing      Original      Derated      Resource
+Layer     Direction    Resources     Resources    Reduction (%)
+---------------------------------------------------------------
+li1        Vertical            0             0          0.00%
+met1       Horizontal        904           429          52.54%
+met2       Vertical          659           366          44.46%
+met3       Horizontal        452           259          42.70%
+met4       Vertical          272           134          50.74%
+met5       Horizontal         88            35          60.23%
+---------------------------------------------------------------
+
+[INFO GRT-0197] Via related to pin nodes: 217
+[INFO GRT-0198] Via related Steiner nodes: 2
+[INFO GRT-0199] Via filling finished.
+[INFO GRT-0111] Final number of vias: 227
+[INFO GRT-0112] Final usage 3D: 793
+
+[INFO GRT-0096] Final congestion report:
+Layer         Resource        Demand        Usage (%)    Max H / Max V / Total Overflow
+---------------------------------------------------------------------------------------
+li1                  0             0            0.00%             0 /  0 /  0
+met1               429            65           15.15%             0 /  0 /  0
+met2               366            47           12.84%             0 /  0 /  0
+met3               259             0            0.00%             0 /  0 /  0
+met4               134             0            0.00%             0 /  0 /  0
+met5                35             0            0.00%             0 /  0 /  0
+---------------------------------------------------------------------------------------
+Total             1223           112            9.16%             0 /  0 /  0
+
+[INFO GRT-0018] Total wirelength: 1593 um
+[INFO GRT-0014] Routed nets: 71
+[INFO] Setting RC values…
+Setting global connections for newly added cells…
+[INFO] Setting global connections...
+Writing OpenROAD database to '/root/nixopenlane/openlane2/runs/RUN_2023-11-30_18-20-58/28-openroad-globalrouting/flex_counter.odb'…
+Writing netlist to '/root/nixopenlane/openlane2/runs/RUN_2023-11-30_18-20-58/28-openroad-globalrouting/flex_counter.nl.v'…
+Writing powered netlist to '/root/nixopenlane/openlane2/runs/RUN_2023-11-30_18-20-58/28-openroad-globalrouting/flex_counter.pnl.v'…
+Writing layout to '/root/nixopenlane/openlane2/runs/RUN_2023-11-30_18-20-58/28-openroad-globalrouting/flex_counter.def'…
+Writing timing constraints to '/root/nixopenlane/openlane2/runs/RUN_2023-11-30_18-20-58/28-openroad-globalrouting/flex_counter.sdc'…

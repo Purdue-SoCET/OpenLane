@@ -1,0 +1,1 @@
+openroad -exit -no_splash -metrics /root/nixopenlane/openlane2/runs/RUN_2023-11-30_18-20-58/28-openroad-globalrouting/or_metrics_out.json /nix/store/igfw5x4x3msz4v61kass8zijavmf330h-python3-3.10.9-env/lib/python3.10/site-packages/openlane/scripts/openroad/grt.tcl

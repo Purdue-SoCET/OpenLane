@@ -1,0 +1,4 @@
+
+15. Executing PROC_DLATCH pass (convert process syncs to latches).
+No latch inferred for signal `\flex_counter.\next_count' from process `\flex_counter.$proc$/root/nixopenlane/openlane2/desflow1/flex_counter.sv:0$8'.
+No latch inferred for signal `\flex_counter.\next_flag' from process `\flex_counter.$proc$/root/nixopenlane/openlane2/desflow1/flex_counter.sv:0$3'.

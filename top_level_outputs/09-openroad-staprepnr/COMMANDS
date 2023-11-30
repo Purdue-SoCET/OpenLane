@@ -1,0 +1,1 @@
+sta -no_splash -exit /nix/store/igfw5x4x3msz4v61kass8zijavmf330h-python3-3.10.9-env/lib/python3.10/site-packages/openlane/scripts/openroad/sta/corner.tcl

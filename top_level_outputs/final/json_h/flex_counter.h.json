@@ -1,0 +1,1133 @@
+{
+  "creator": "Yosys 0.33 (git sha1 2584903a060, clang++ 11.1.0 -fPIC -Os)",
+  "modules": {
+    "flex_counter": {
+      "attributes": {
+        "dynports": "00000000000000000000000000000001",
+        "top": "00000000000000000000000000000001",
+        "src": "/root/nixopenlane/openlane2/desflow1/flex_counter.sv:1.1-66.10"
+      },
+      "parameter_default_values": {
+        "BIT_WIDTH": "00000000000000000000000000000100"
+      },
+      "ports": {
+        "clk": {
+          "direction": "input",
+          "bits": [ 2 ]
+        },
+        "nRST": {
+          "direction": "input",
+          "bits": [ 3 ]
+        },
+        "enable": {
+          "direction": "input",
+          "bits": [ 4 ]
+        },
+        "clear": {
+          "direction": "input",
+          "bits": [ 5 ]
+        },
+        "rollover": {
+          "direction": "input",
+          "bits": [ 6, 7, 8, 9 ]
+        },
+        "count": {
+          "direction": "output",
+          "bits": [ 10, 11, 12, 13 ]
+        },
+        "flag": {
+          "direction": "output",
+          "bits": [ 14 ]
+        }
+      },
+      "cells": {
+        "$add$/root/nixopenlane/openlane2/desflow1/flex_counter.sv:57$14": {
+          "hide_name": 1,
+          "type": "$add",
+          "parameters": {
+            "A_SIGNED": "00000000000000000000000000000000",
+            "A_WIDTH": "00000000000000000000000000000100",
+            "B_SIGNED": "00000000000000000000000000000000",
+            "B_WIDTH": "00000000000000000000000000100000",
+            "Y_WIDTH": "00000000000000000000000000100000"
+          },
+          "attributes": {
+            "src": "/root/nixopenlane/openlane2/desflow1/flex_counter.sv:57.19-57.28"
+          },
+          "port_directions": {
+            "A": "input",
+            "B": "input",
+            "Y": "output"
+          },
+          "connections": {
+            "A": [ 10, 11, 12, 13 ],
+            "B": [ "1", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0" ],
+            "Y": [ 15, 16, 17, 18, 19, 20, 21, 22, 23, 24, 25, 26, 27, 28, 29, 30, 31, 32, 33, 34, 35, 36, 37, 38, 39, 40, 41, 42, 43, 44, 45, 46 ]
+          }
+        },
+        "$eq$/root/nixopenlane/openlane2/desflow1/flex_counter.sv:27$4": {
+          "hide_name": 1,
+          "type": "$not",
+          "parameters": {
+            "A_SIGNED": "00000000000000000000000000000000",
+            "A_WIDTH": "00000000000000000000000000000001",
+            "Y_WIDTH": "00000000000000000000000000000001"
+          },
+          "attributes": {
+            "src": "/root/nixopenlane/openlane2/desflow1/flex_counter.sv:27.7-27.20"
+          },
+          "port_directions": {
+            "A": "input",
+            "Y": "output"
+          },
+          "connections": {
+            "A": [ 5 ],
+            "Y": [ 47 ]
+          }
+        },
+        "$eq$/root/nixopenlane/openlane2/desflow1/flex_counter.sv:28$5": {
+          "hide_name": 1,
+          "type": "$eq",
+          "parameters": {
+            "A_SIGNED": "00000000000000000000000000000000",
+            "A_WIDTH": "00000000000000000000000000000100",
+            "B_SIGNED": "00000000000000000000000000000000",
+            "B_WIDTH": "00000000000000000000000000000100",
+            "Y_WIDTH": "00000000000000000000000000000001"
+          },
+          "attributes": {
+            "src": "/root/nixopenlane/openlane2/desflow1/flex_counter.sv:28.8-28.30"
+          },
+          "port_directions": {
+            "A": "input",
+            "B": "input",
+            "Y": "output"
+          },
+          "connections": {
+            "A": [ 48, 49, 50, 51 ],
+            "B": [ 6, 7, 8, 9 ],
+            "Y": [ 52 ]
+          }
+        },
+        "$eq$/root/nixopenlane/openlane2/desflow1/flex_counter.sv:28$6": {
+          "hide_name": 1,
+          "type": "$logic_not",
+          "parameters": {
+            "A_SIGNED": "00000000000000000000000000000000",
+            "A_WIDTH": "00000000000000000000000000000100",
+            "Y_WIDTH": "00000000000000000000000000000001"
+          },
+          "attributes": {
+            "src": "/root/nixopenlane/openlane2/desflow1/flex_counter.sv:28.34-28.48"
+          },
+          "port_directions": {
+            "A": "input",
+            "Y": "output"
+          },
+          "connections": {
+            "A": [ 6, 7, 8, 9 ],
+            "Y": [ 53 ]
+          }
+        },
+        "$eq$/root/nixopenlane/openlane2/desflow1/flex_counter.sv:43$9": {
+          "hide_name": 1,
+          "type": "$not",
+          "parameters": {
+            "A_SIGNED": "00000000000000000000000000000000",
+            "A_WIDTH": "00000000000000000000000000000001",
+            "Y_WIDTH": "00000000000000000000000000000001"
+          },
+          "attributes": {
+            "src": "/root/nixopenlane/openlane2/desflow1/flex_counter.sv:43.7-43.20"
+          },
+          "port_directions": {
+            "A": "input",
+            "Y": "output"
+          },
+          "connections": {
+            "A": [ 5 ],
+            "Y": [ 54 ]
+          }
+        },
+        "$eq$/root/nixopenlane/openlane2/desflow1/flex_counter.sv:45$11": {
+          "hide_name": 1,
+          "type": "$eq",
+          "parameters": {
+            "A_SIGNED": "00000000000000000000000000000000",
+            "A_WIDTH": "00000000000000000000000000000100",
+            "B_SIGNED": "00000000000000000000000000000000",
+            "B_WIDTH": "00000000000000000000000000000100",
+            "Y_WIDTH": "00000000000000000000000000000001"
+          },
+          "attributes": {
+            "src": "/root/nixopenlane/openlane2/desflow1/flex_counter.sv:45.9-45.26"
+          },
+          "port_directions": {
+            "A": "input",
+            "B": "input",
+            "Y": "output"
+          },
+          "connections": {
+            "A": [ 10, 11, 12, 13 ],
+            "B": [ 6, 7, 8, 9 ],
+            "Y": [ 55 ]
+          }
+        },
+        "$eq$/root/nixopenlane/openlane2/desflow1/flex_counter.sv:46$12": {
+          "hide_name": 1,
+          "type": "$logic_not",
+          "parameters": {
+            "A_SIGNED": "00000000000000000000000000000000",
+            "A_WIDTH": "00000000000000000000000000000100",
+            "Y_WIDTH": "00000000000000000000000000000001"
+          },
+          "attributes": {
+            "src": "/root/nixopenlane/openlane2/desflow1/flex_counter.sv:46.10-46.24"
+          },
+          "port_directions": {
+            "A": "input",
+            "Y": "output"
+          },
+          "connections": {
+            "A": [ 6, 7, 8, 9 ],
+            "Y": [ 56 ]
+          }
+        },
+        "$gt$/root/nixopenlane/openlane2/desflow1/flex_counter.sv:53$13": {
+          "hide_name": 1,
+          "type": "$gt",
+          "parameters": {
+            "A_SIGNED": "00000000000000000000000000000000",
+            "A_WIDTH": "00000000000000000000000000000100",
+            "B_SIGNED": "00000000000000000000000000000000",
+            "B_WIDTH": "00000000000000000000000000000100",
+            "Y_WIDTH": "00000000000000000000000000000001"
+          },
+          "attributes": {
+            "src": "/root/nixopenlane/openlane2/desflow1/flex_counter.sv:53.14-53.30"
+          },
+          "port_directions": {
+            "A": "input",
+            "B": "input",
+            "Y": "output"
+          },
+          "connections": {
+            "A": [ 10, 11, 12, 13 ],
+            "B": [ 6, 7, 8, 9 ],
+            "Y": [ 57 ]
+          }
+        },
+        "$logic_not$/root/nixopenlane/openlane2/desflow1/flex_counter.sv:14$2": {
+          "hide_name": 1,
+          "type": "$logic_not",
+          "parameters": {
+            "A_SIGNED": "00000000000000000000000000000000",
+            "A_WIDTH": "00000000000000000000000000000001",
+            "Y_WIDTH": "00000000000000000000000000000001"
+          },
+          "attributes": {
+            "src": "/root/nixopenlane/openlane2/desflow1/flex_counter.sv:14.7-14.12"
+          },
+          "port_directions": {
+            "A": "input",
+            "Y": "output"
+          },
+          "connections": {
+            "A": [ 3 ],
+            "Y": [ 58 ]
+          }
+        },
+        "$logic_or$/root/nixopenlane/openlane2/desflow1/flex_counter.sv:28$7": {
+          "hide_name": 1,
+          "type": "$logic_or",
+          "parameters": {
+            "A_SIGNED": "00000000000000000000000000000000",
+            "A_WIDTH": "00000000000000000000000000000001",
+            "B_SIGNED": "00000000000000000000000000000000",
+            "B_WIDTH": "00000000000000000000000000000001",
+            "Y_WIDTH": "00000000000000000000000000000001"
+          },
+          "attributes": {
+            "src": "/root/nixopenlane/openlane2/desflow1/flex_counter.sv:28.8-28.48"
+          },
+          "port_directions": {
+            "A": "input",
+            "B": "input",
+            "Y": "output"
+          },
+          "connections": {
+            "A": [ 52 ],
+            "B": [ 53 ],
+            "Y": [ 59 ]
+          }
+        },
+        "$procdff$68": {
+          "hide_name": 1,
+          "type": "$adff",
+          "parameters": {
+            "ARST_POLARITY": "0",
+            "ARST_VALUE": "0000",
+            "CLK_POLARITY": "1",
+            "WIDTH": "00000000000000000000000000000100"
+          },
+          "attributes": {
+            "always_ff": "00000000000000000000000000000001",
+            "src": "/root/nixopenlane/openlane2/desflow1/flex_counter.sv:13.2-22.5"
+          },
+          "port_directions": {
+            "ARST": "input",
+            "CLK": "input",
+            "D": "input",
+            "Q": "output"
+          },
+          "connections": {
+            "ARST": [ 3 ],
+            "CLK": [ 2 ],
+            "D": [ 48, 49, 50, 51 ],
+            "Q": [ 10, 11, 12, 13 ]
+          }
+        },
+        "$procdff$69": {
+          "hide_name": 1,
+          "type": "$adff",
+          "parameters": {
+            "ARST_POLARITY": "0",
+            "ARST_VALUE": "0",
+            "CLK_POLARITY": "1",
+            "WIDTH": "00000000000000000000000000000001"
+          },
+          "attributes": {
+            "always_ff": "00000000000000000000000000000001",
+            "src": "/root/nixopenlane/openlane2/desflow1/flex_counter.sv:13.2-22.5"
+          },
+          "port_directions": {
+            "ARST": "input",
+            "CLK": "input",
+            "D": "input",
+            "Q": "output"
+          },
+          "connections": {
+            "ARST": [ 3 ],
+            "CLK": [ 2 ],
+            "D": [ 60 ],
+            "Q": [ 14 ]
+          }
+        },
+        "$procmux$20": {
+          "hide_name": 1,
+          "type": "$mux",
+          "parameters": {
+            "WIDTH": "00000000000000000000000000000100"
+          },
+          "attributes": {
+            "full_case": "00000000000000000000000000000001",
+            "src": "/root/nixopenlane/openlane2/desflow1/flex_counter.sv:53.14-53.30|/root/nixopenlane/openlane2/desflow1/flex_counter.sv:53.10-58.8"
+          },
+          "port_directions": {
+            "A": "input",
+            "B": "input",
+            "S": "input",
+            "Y": "output"
+          },
+          "connections": {
+            "A": [ 15, 16, 17, 18 ],
+            "B": [ "1", "0", "0", "0" ],
+            "S": [ 57 ],
+            "Y": [ 61, 62, 63, 64 ]
+          }
+        },
+        "$procmux$23": {
+          "hide_name": 1,
+          "type": "$mux",
+          "parameters": {
+            "WIDTH": "00000000000000000000000000000100"
+          },
+          "attributes": {
+            "full_case": "00000000000000000000000000000001",
+            "src": "/root/nixopenlane/openlane2/desflow1/flex_counter.sv:45.9-45.26|/root/nixopenlane/openlane2/desflow1/flex_counter.sv:45.5-58.8"
+          },
+          "port_directions": {
+            "A": "input",
+            "B": "input",
+            "S": "input",
+            "Y": "output"
+          },
+          "connections": {
+            "A": [ 61, 62, 63, 64 ],
+            "B": [ "x", "x", "x", "x" ],
+            "S": [ 55 ],
+            "Y": [ 65, 66, 67, 68 ]
+          }
+        },
+        "$procmux$25": {
+          "hide_name": 1,
+          "type": "$mux",
+          "parameters": {
+            "WIDTH": "00000000000000000000000000000100"
+          },
+          "attributes": {
+            "full_case": "00000000000000000000000000000001",
+            "src": "/root/nixopenlane/openlane2/desflow1/flex_counter.sv:44.8-44.22|/root/nixopenlane/openlane2/desflow1/flex_counter.sv:44.4-59.7"
+          },
+          "port_directions": {
+            "A": "input",
+            "B": "input",
+            "S": "input",
+            "Y": "output"
+          },
+          "connections": {
+            "A": [ "x", "x", "x", "x" ],
+            "B": [ 65, 66, 67, 68 ],
+            "S": [ 4 ],
+            "Y": [ 69, 70, 71, 72 ]
+          }
+        },
+        "$procmux$27": {
+          "hide_name": 1,
+          "type": "$mux",
+          "parameters": {
+            "WIDTH": "00000000000000000000000000000100"
+          },
+          "attributes": {
+            "full_case": "00000000000000000000000000000001",
+            "src": "/root/nixopenlane/openlane2/desflow1/flex_counter.sv:43.7-43.20|/root/nixopenlane/openlane2/desflow1/flex_counter.sv:43.3-63.6"
+          },
+          "port_directions": {
+            "A": "input",
+            "B": "input",
+            "S": "input",
+            "Y": "output"
+          },
+          "connections": {
+            "A": [ 69, 70, 71, 72 ],
+            "B": [ "x", "x", "x", "x" ],
+            "S": [ 5 ],
+            "Y": [ 73, 74, 75, 76 ]
+          }
+        },
+        "$procmux$33": {
+          "hide_name": 1,
+          "type": "$mux",
+          "parameters": {
+            "WIDTH": "00000000000000000000000000000100"
+          },
+          "attributes": {
+            "full_case": "00000000000000000000000000000001",
+            "src": "/root/nixopenlane/openlane2/desflow1/flex_counter.sv:46.10-46.24|/root/nixopenlane/openlane2/desflow1/flex_counter.sv:46.6-51.9"
+          },
+          "port_directions": {
+            "A": "input",
+            "B": "input",
+            "S": "input",
+            "Y": "output"
+          },
+          "connections": {
+            "A": [ "1", "0", "0", "0" ],
+            "B": [ "0", "0", "0", "0" ],
+            "S": [ 56 ],
+            "Y": [ 77, 78, 79, 80 ]
+          }
+        },
+        "$procmux$35": {
+          "hide_name": 1,
+          "type": "$mux",
+          "parameters": {
+            "WIDTH": "00000000000000000000000000000100"
+          },
+          "attributes": {
+            "full_case": "00000000000000000000000000000001",
+            "src": "/root/nixopenlane/openlane2/desflow1/flex_counter.sv:45.9-45.26|/root/nixopenlane/openlane2/desflow1/flex_counter.sv:45.5-58.8"
+          },
+          "port_directions": {
+            "A": "input",
+            "B": "input",
+            "S": "input",
+            "Y": "output"
+          },
+          "connections": {
+            "A": [ "x", "x", "x", "x" ],
+            "B": [ 77, 78, 79, 80 ],
+            "S": [ 55 ],
+            "Y": [ 81, 82, 83, 84 ]
+          }
+        },
+        "$procmux$37": {
+          "hide_name": 1,
+          "type": "$mux",
+          "parameters": {
+            "WIDTH": "00000000000000000000000000000100"
+          },
+          "attributes": {
+            "full_case": "00000000000000000000000000000001",
+            "src": "/root/nixopenlane/openlane2/desflow1/flex_counter.sv:44.8-44.22|/root/nixopenlane/openlane2/desflow1/flex_counter.sv:44.4-59.7"
+          },
+          "port_directions": {
+            "A": "input",
+            "B": "input",
+            "S": "input",
+            "Y": "output"
+          },
+          "connections": {
+            "A": [ "x", "x", "x", "x" ],
+            "B": [ 81, 82, 83, 84 ],
+            "S": [ 4 ],
+            "Y": [ 85, 86, 87, 88 ]
+          }
+        },
+        "$procmux$39": {
+          "hide_name": 1,
+          "type": "$mux",
+          "parameters": {
+            "WIDTH": "00000000000000000000000000000100"
+          },
+          "attributes": {
+            "full_case": "00000000000000000000000000000001",
+            "src": "/root/nixopenlane/openlane2/desflow1/flex_counter.sv:43.7-43.20|/root/nixopenlane/openlane2/desflow1/flex_counter.sv:43.3-63.6"
+          },
+          "port_directions": {
+            "A": "input",
+            "B": "input",
+            "S": "input",
+            "Y": "output"
+          },
+          "connections": {
+            "A": [ 85, 86, 87, 88 ],
+            "B": [ "x", "x", "x", "x" ],
+            "S": [ 5 ],
+            "Y": [ 89, 90, 91, 92 ]
+          }
+        },
+        "$procmux$44": {
+          "hide_name": 1,
+          "type": "$mux",
+          "parameters": {
+            "WIDTH": "00000000000000000000000000000100"
+          },
+          "attributes": {
+            "full_case": "00000000000000000000000000000001",
+            "src": "/root/nixopenlane/openlane2/desflow1/flex_counter.sv:45.9-45.26|/root/nixopenlane/openlane2/desflow1/flex_counter.sv:45.5-58.8"
+          },
+          "port_directions": {
+            "A": "input",
+            "B": "input",
+            "S": "input",
+            "Y": "output"
+          },
+          "connections": {
+            "A": [ 73, 74, 75, 76 ],
+            "B": [ 89, 90, 91, 92 ],
+            "S": [ 55 ],
+            "Y": [ 93, 94, 95, 96 ]
+          }
+        },
+        "$procmux$46": {
+          "hide_name": 1,
+          "type": "$mux",
+          "parameters": {
+            "WIDTH": "00000000000000000000000000000100"
+          },
+          "attributes": {
+            "full_case": "00000000000000000000000000000001",
+            "src": "/root/nixopenlane/openlane2/desflow1/flex_counter.sv:44.8-44.22|/root/nixopenlane/openlane2/desflow1/flex_counter.sv:44.4-59.7"
+          },
+          "port_directions": {
+            "A": "input",
+            "B": "input",
+            "S": "input",
+            "Y": "output"
+          },
+          "connections": {
+            "A": [ "x", "x", "x", "x" ],
+            "B": [ 93, 94, 95, 96 ],
+            "S": [ 4 ],
+            "Y": [ 97, 98, 99, 100 ]
+          }
+        },
+        "$procmux$48": {
+          "hide_name": 1,
+          "type": "$mux",
+          "parameters": {
+            "WIDTH": "00000000000000000000000000000100"
+          },
+          "attributes": {
+            "full_case": "00000000000000000000000000000001",
+            "src": "/root/nixopenlane/openlane2/desflow1/flex_counter.sv:43.7-43.20|/root/nixopenlane/openlane2/desflow1/flex_counter.sv:43.3-63.6"
+          },
+          "port_directions": {
+            "A": "input",
+            "B": "input",
+            "S": "input",
+            "Y": "output"
+          },
+          "connections": {
+            "A": [ 97, 98, 99, 100 ],
+            "B": [ "x", "x", "x", "x" ],
+            "S": [ 5 ],
+            "Y": [ 101, 102, 103, 104 ]
+          }
+        },
+        "$procmux$52": {
+          "hide_name": 1,
+          "type": "$mux",
+          "parameters": {
+            "WIDTH": "00000000000000000000000000000100"
+          },
+          "attributes": {
+            "full_case": "00000000000000000000000000000001",
+            "src": "/root/nixopenlane/openlane2/desflow1/flex_counter.sv:44.8-44.22|/root/nixopenlane/openlane2/desflow1/flex_counter.sv:44.4-59.7"
+          },
+          "port_directions": {
+            "A": "input",
+            "B": "input",
+            "S": "input",
+            "Y": "output"
+          },
+          "connections": {
+            "A": [ 10, 11, 12, 13 ],
+            "B": [ 101, 102, 103, 104 ],
+            "S": [ 4 ],
+            "Y": [ 105, 106, 107, 108 ]
+          }
+        },
+        "$procmux$54": {
+          "hide_name": 1,
+          "type": "$mux",
+          "parameters": {
+            "WIDTH": "00000000000000000000000000000100"
+          },
+          "attributes": {
+            "full_case": "00000000000000000000000000000001",
+            "src": "/root/nixopenlane/openlane2/desflow1/flex_counter.sv:43.7-43.20|/root/nixopenlane/openlane2/desflow1/flex_counter.sv:43.3-63.6"
+          },
+          "port_directions": {
+            "A": "input",
+            "B": "input",
+            "S": "input",
+            "Y": "output"
+          },
+          "connections": {
+            "A": [ 105, 106, 107, 108 ],
+            "B": [ "x", "x", "x", "x" ],
+            "S": [ 5 ],
+            "Y": [ 109, 110, 111, 112 ]
+          }
+        },
+        "$procmux$57": {
+          "hide_name": 1,
+          "type": "$mux",
+          "parameters": {
+            "WIDTH": "00000000000000000000000000000100"
+          },
+          "attributes": {
+            "full_case": "00000000000000000000000000000001",
+            "src": "/root/nixopenlane/openlane2/desflow1/flex_counter.sv:43.7-43.20|/root/nixopenlane/openlane2/desflow1/flex_counter.sv:43.3-63.6"
+          },
+          "port_directions": {
+            "A": "input",
+            "B": "input",
+            "S": "input",
+            "Y": "output"
+          },
+          "connections": {
+            "A": [ 109, 110, 111, 112 ],
+            "B": [ "0", "0", "0", "0" ],
+            "S": [ 5 ],
+            "Y": [ 48, 49, 50, 51 ]
+          }
+        },
+        "$procmux$61": {
+          "hide_name": 1,
+          "type": "$mux",
+          "parameters": {
+            "WIDTH": "00000000000000000000000000000001"
+          },
+          "attributes": {
+            "full_case": "00000000000000000000000000000001",
+            "src": "/root/nixopenlane/openlane2/desflow1/flex_counter.sv:28.8-28.48|/root/nixopenlane/openlane2/desflow1/flex_counter.sv:28.4-33.7"
+          },
+          "port_directions": {
+            "A": "input",
+            "B": "input",
+            "S": "input",
+            "Y": "output"
+          },
+          "connections": {
+            "A": [ "0" ],
+            "B": [ "1" ],
+            "S": [ 59 ],
+            "Y": [ 113 ]
+          }
+        },
+        "$procmux$63": {
+          "hide_name": 1,
+          "type": "$mux",
+          "parameters": {
+            "WIDTH": "00000000000000000000000000000001"
+          },
+          "attributes": {
+            "full_case": "00000000000000000000000000000001",
+            "src": "/root/nixopenlane/openlane2/desflow1/flex_counter.sv:27.7-27.20|/root/nixopenlane/openlane2/desflow1/flex_counter.sv:27.3-37.6"
+          },
+          "port_directions": {
+            "A": "input",
+            "B": "input",
+            "S": "input",
+            "Y": "output"
+          },
+          "connections": {
+            "A": [ 113 ],
+            "B": [ "x" ],
+            "S": [ 5 ],
+            "Y": [ 114 ]
+          }
+        },
+        "$procmux$66": {
+          "hide_name": 1,
+          "type": "$mux",
+          "parameters": {
+            "WIDTH": "00000000000000000000000000000001"
+          },
+          "attributes": {
+            "full_case": "00000000000000000000000000000001",
+            "src": "/root/nixopenlane/openlane2/desflow1/flex_counter.sv:27.7-27.20|/root/nixopenlane/openlane2/desflow1/flex_counter.sv:27.3-37.6"
+          },
+          "port_directions": {
+            "A": "input",
+            "B": "input",
+            "S": "input",
+            "Y": "output"
+          },
+          "connections": {
+            "A": [ 114 ],
+            "B": [ "0" ],
+            "S": [ 5 ],
+            "Y": [ 60 ]
+          }
+        }
+      },
+      "netnames": {
+        "$0\\count[3:0]": {
+          "hide_name": 1,
+          "bits": [ 48, 49, 50, 51 ],
+          "attributes": {
+            "src": "/root/nixopenlane/openlane2/desflow1/flex_counter.sv:13.2-22.5"
+          }
+        },
+        "$0\\flag[0:0]": {
+          "hide_name": 1,
+          "bits": [ 60 ],
+          "attributes": {
+            "src": "/root/nixopenlane/openlane2/desflow1/flex_counter.sv:13.2-22.5"
+          }
+        },
+        "$0\\next_count[3:0]": {
+          "hide_name": 1,
+          "bits": [ 48, 49, 50, 51 ],
+          "attributes": {
+            "src": "/root/nixopenlane/openlane2/desflow1/flex_counter.sv:0.0-0.0"
+          }
+        },
+        "$0\\next_flag[0:0]": {
+          "hide_name": 1,
+          "bits": [ 60 ],
+          "attributes": {
+            "src": "/root/nixopenlane/openlane2/desflow1/flex_counter.sv:0.0-0.0"
+          }
+        },
+        "$1\\next_count[3:0]": {
+          "hide_name": 1,
+          "bits": [ 48, 49, 50, 51 ],
+          "attributes": {
+            "src": "/root/nixopenlane/openlane2/desflow1/flex_counter.sv:0.0-0.0"
+          }
+        },
+        "$1\\next_flag[0:0]": {
+          "hide_name": 1,
+          "bits": [ 60 ],
+          "attributes": {
+            "src": "/root/nixopenlane/openlane2/desflow1/flex_counter.sv:0.0-0.0"
+          }
+        },
+        "$2\\next_count[3:0]": {
+          "hide_name": 1,
+          "bits": [ 109, 110, 111, 112 ],
+          "attributes": {
+            "src": "/root/nixopenlane/openlane2/desflow1/flex_counter.sv:0.0-0.0"
+          }
+        },
+        "$2\\next_flag[0:0]": {
+          "hide_name": 1,
+          "bits": [ 114 ],
+          "attributes": {
+            "src": "/root/nixopenlane/openlane2/desflow1/flex_counter.sv:0.0-0.0"
+          }
+        },
+        "$3\\next_count[3:0]": {
+          "hide_name": 1,
+          "bits": [ 101, 102, 103, 104 ],
+          "attributes": {
+            "src": "/root/nixopenlane/openlane2/desflow1/flex_counter.sv:0.0-0.0"
+          }
+        },
+        "$4\\next_count[3:0]": {
+          "hide_name": 1,
+          "bits": [ 89, 90, 91, 92 ],
+          "attributes": {
+            "src": "/root/nixopenlane/openlane2/desflow1/flex_counter.sv:0.0-0.0"
+          }
+        },
+        "$5\\next_count[3:0]": {
+          "hide_name": 1,
+          "bits": [ 73, 74, 75, 76 ],
+          "attributes": {
+            "src": "/root/nixopenlane/openlane2/desflow1/flex_counter.sv:0.0-0.0"
+          }
+        },
+        "$add$/root/nixopenlane/openlane2/desflow1/flex_counter.sv:57$14_Y": {
+          "hide_name": 1,
+          "bits": [ 15, 16, 17, 18, 19, 20, 21, 22, 23, 24, 25, 26, 27, 28, 29, 30, 31, 32, 33, 34, 35, 36, 37, 38, 39, 40, 41, 42, 43, 44, 45, 46 ],
+          "attributes": {
+            "src": "/root/nixopenlane/openlane2/desflow1/flex_counter.sv:57.19-57.28"
+          }
+        },
+        "$eq$/root/nixopenlane/openlane2/desflow1/flex_counter.sv:27$4_Y": {
+          "hide_name": 1,
+          "bits": [ 47 ],
+          "attributes": {
+            "src": "/root/nixopenlane/openlane2/desflow1/flex_counter.sv:27.7-27.20"
+          }
+        },
+        "$eq$/root/nixopenlane/openlane2/desflow1/flex_counter.sv:28$5_Y": {
+          "hide_name": 1,
+          "bits": [ 52 ],
+          "attributes": {
+            "src": "/root/nixopenlane/openlane2/desflow1/flex_counter.sv:28.8-28.30"
+          }
+        },
+        "$eq$/root/nixopenlane/openlane2/desflow1/flex_counter.sv:28$6_Y": {
+          "hide_name": 1,
+          "bits": [ 53 ],
+          "attributes": {
+            "src": "/root/nixopenlane/openlane2/desflow1/flex_counter.sv:28.34-28.48"
+          }
+        },
+        "$eq$/root/nixopenlane/openlane2/desflow1/flex_counter.sv:43$9_Y": {
+          "hide_name": 1,
+          "bits": [ 54 ],
+          "attributes": {
+            "src": "/root/nixopenlane/openlane2/desflow1/flex_counter.sv:43.7-43.20"
+          }
+        },
+        "$eq$/root/nixopenlane/openlane2/desflow1/flex_counter.sv:44$10_Y": {
+          "hide_name": 1,
+          "bits": [ 4 ],
+          "attributes": {
+            "src": "/root/nixopenlane/openlane2/desflow1/flex_counter.sv:44.8-44.22"
+          }
+        },
+        "$eq$/root/nixopenlane/openlane2/desflow1/flex_counter.sv:45$11_Y": {
+          "hide_name": 1,
+          "bits": [ 55 ],
+          "attributes": {
+            "src": "/root/nixopenlane/openlane2/desflow1/flex_counter.sv:45.9-45.26"
+          }
+        },
+        "$eq$/root/nixopenlane/openlane2/desflow1/flex_counter.sv:46$12_Y": {
+          "hide_name": 1,
+          "bits": [ 56 ],
+          "attributes": {
+            "src": "/root/nixopenlane/openlane2/desflow1/flex_counter.sv:46.10-46.24"
+          }
+        },
+        "$gt$/root/nixopenlane/openlane2/desflow1/flex_counter.sv:53$13_Y": {
+          "hide_name": 1,
+          "bits": [ 57 ],
+          "attributes": {
+            "src": "/root/nixopenlane/openlane2/desflow1/flex_counter.sv:53.14-53.30"
+          }
+        },
+        "$logic_not$/root/nixopenlane/openlane2/desflow1/flex_counter.sv:14$2_Y": {
+          "hide_name": 1,
+          "bits": [ 58 ],
+          "attributes": {
+            "src": "/root/nixopenlane/openlane2/desflow1/flex_counter.sv:14.7-14.12"
+          }
+        },
+        "$logic_or$/root/nixopenlane/openlane2/desflow1/flex_counter.sv:28$7_Y": {
+          "hide_name": 1,
+          "bits": [ 59 ],
+          "attributes": {
+            "src": "/root/nixopenlane/openlane2/desflow1/flex_counter.sv:28.8-28.48"
+          }
+        },
+        "$procmux$20_Y": {
+          "hide_name": 1,
+          "bits": [ 61, 62, 63, 64 ],
+          "attributes": {
+          }
+        },
+        "$procmux$21_CMP": {
+          "hide_name": 1,
+          "bits": [ 57 ],
+          "attributes": {
+          }
+        },
+        "$procmux$23_Y": {
+          "hide_name": 1,
+          "bits": [ 65, 66, 67, 68 ],
+          "attributes": {
+          }
+        },
+        "$procmux$24_CMP": {
+          "hide_name": 1,
+          "bits": [ 55 ],
+          "attributes": {
+          }
+        },
+        "$procmux$25_Y": {
+          "hide_name": 1,
+          "bits": [ 69, 70, 71, 72 ],
+          "attributes": {
+          }
+        },
+        "$procmux$26_CMP": {
+          "hide_name": 1,
+          "bits": [ 4 ],
+          "attributes": {
+          }
+        },
+        "$procmux$27_Y": {
+          "hide_name": 1,
+          "bits": [ 73, 74, 75, 76 ],
+          "attributes": {
+          }
+        },
+        "$procmux$28_CMP": {
+          "hide_name": 1,
+          "bits": [ 54 ],
+          "attributes": {
+          }
+        },
+        "$procmux$33_Y": {
+          "hide_name": 1,
+          "bits": [ 77, 78, 79, 80 ],
+          "attributes": {
+          }
+        },
+        "$procmux$34_CMP": {
+          "hide_name": 1,
+          "bits": [ 56 ],
+          "attributes": {
+          }
+        },
+        "$procmux$35_Y": {
+          "hide_name": 1,
+          "bits": [ 81, 82, 83, 84 ],
+          "attributes": {
+          }
+        },
+        "$procmux$36_CMP": {
+          "hide_name": 1,
+          "bits": [ 55 ],
+          "attributes": {
+          }
+        },
+        "$procmux$37_Y": {
+          "hide_name": 1,
+          "bits": [ 85, 86, 87, 88 ],
+          "attributes": {
+          }
+        },
+        "$procmux$38_CMP": {
+          "hide_name": 1,
+          "bits": [ 4 ],
+          "attributes": {
+          }
+        },
+        "$procmux$39_Y": {
+          "hide_name": 1,
+          "bits": [ 89, 90, 91, 92 ],
+          "attributes": {
+          }
+        },
+        "$procmux$40_CMP": {
+          "hide_name": 1,
+          "bits": [ 54 ],
+          "attributes": {
+          }
+        },
+        "$procmux$44_Y": {
+          "hide_name": 1,
+          "bits": [ 93, 94, 95, 96 ],
+          "attributes": {
+          }
+        },
+        "$procmux$45_CMP": {
+          "hide_name": 1,
+          "bits": [ 55 ],
+          "attributes": {
+          }
+        },
+        "$procmux$46_Y": {
+          "hide_name": 1,
+          "bits": [ 97, 98, 99, 100 ],
+          "attributes": {
+          }
+        },
+        "$procmux$47_CMP": {
+          "hide_name": 1,
+          "bits": [ 4 ],
+          "attributes": {
+          }
+        },
+        "$procmux$48_Y": {
+          "hide_name": 1,
+          "bits": [ 101, 102, 103, 104 ],
+          "attributes": {
+          }
+        },
+        "$procmux$49_CMP": {
+          "hide_name": 1,
+          "bits": [ 54 ],
+          "attributes": {
+          }
+        },
+        "$procmux$52_Y": {
+          "hide_name": 1,
+          "bits": [ 105, 106, 107, 108 ],
+          "attributes": {
+          }
+        },
+        "$procmux$53_CMP": {
+          "hide_name": 1,
+          "bits": [ 4 ],
+          "attributes": {
+          }
+        },
+        "$procmux$54_Y": {
+          "hide_name": 1,
+          "bits": [ 109, 110, 111, 112 ],
+          "attributes": {
+          }
+        },
+        "$procmux$55_CMP": {
+          "hide_name": 1,
+          "bits": [ 54 ],
+          "attributes": {
+          }
+        },
+        "$procmux$57_Y": {
+          "hide_name": 1,
+          "bits": [ 48, 49, 50, 51 ],
+          "attributes": {
+          }
+        },
+        "$procmux$58_CMP": {
+          "hide_name": 1,
+          "bits": [ 54 ],
+          "attributes": {
+          }
+        },
+        "$procmux$61_Y": {
+          "hide_name": 1,
+          "bits": [ 113 ],
+          "attributes": {
+          }
+        },
+        "$procmux$62_CMP": {
+          "hide_name": 1,
+          "bits": [ 59 ],
+          "attributes": {
+          }
+        },
+        "$procmux$63_Y": {
+          "hide_name": 1,
+          "bits": [ 114 ],
+          "attributes": {
+          }
+        },
+        "$procmux$64_CMP": {
+          "hide_name": 1,
+          "bits": [ 47 ],
+          "attributes": {
+          }
+        },
+        "$procmux$66_Y": {
+          "hide_name": 1,
+          "bits": [ 60 ],
+          "attributes": {
+          }
+        },
+        "$procmux$67_CMP": {
+          "hide_name": 1,
+          "bits": [ 47 ],
+          "attributes": {
+          }
+        },
+        "clear": {
+          "hide_name": 0,
+          "bits": [ 5 ],
+          "attributes": {
+            "src": "/root/nixopenlane/openlane2/desflow1/flex_counter.sv:3.44-3.49"
+          }
+        },
+        "clk": {
+          "hide_name": 0,
+          "bits": [ 2 ],
+          "attributes": {
+            "src": "/root/nixopenlane/openlane2/desflow1/flex_counter.sv:2.36-2.39"
+          }
+        },
+        "count": {
+          "hide_name": 0,
+          "bits": [ 10, 11, 12, 13 ],
+          "attributes": {
+            "src": "/root/nixopenlane/openlane2/desflow1/flex_counter.sv:5.53-5.58"
+          }
+        },
+        "enable": {
+          "hide_name": 0,
+          "bits": [ 4 ],
+          "attributes": {
+            "src": "/root/nixopenlane/openlane2/desflow1/flex_counter.sv:3.36-3.42"
+          }
+        },
+        "flag": {
+          "hide_name": 0,
+          "bits": [ 14 ],
+          "attributes": {
+            "src": "/root/nixopenlane/openlane2/desflow1/flex_counter.sv:6.37-6.41"
+          }
+        },
+        "nRST": {
+          "hide_name": 0,
+          "bits": [ 3 ],
+          "attributes": {
+            "src": "/root/nixopenlane/openlane2/desflow1/flex_counter.sv:2.41-2.45"
+          }
+        },
+        "next_count": {
+          "hide_name": 0,
+          "bits": [ 48, 49, 50, 51 ],
+          "attributes": {
+            "src": "/root/nixopenlane/openlane2/desflow1/flex_counter.sv:8.24-8.34"
+          }
+        },
+        "next_flag": {
+          "hide_name": 0,
+          "bits": [ 60 ],
+          "attributes": {
+            "src": "/root/nixopenlane/openlane2/desflow1/flex_counter.sv:9.8-9.17"
+          }
+        },
+        "rollover": {
+          "hide_name": 0,
+          "bits": [ 6, 7, 8, 9 ],
+          "attributes": {
+            "src": "/root/nixopenlane/openlane2/desflow1/flex_counter.sv:4.52-4.60"
+          }
+        }
+      }
+    }
+  }
+}
